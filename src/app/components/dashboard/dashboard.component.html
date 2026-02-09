@@ -1,0 +1,19 @@
+<h2>Dashboard</h2>
+
+<app-booking-form></app-booking-form>
+
+<table border="1">
+  <tr>
+    <th>AWB</th>
+    <th>Origin</th>
+    <th>Destination</th>
+    <th>Weight</th>
+  </tr>
+  <tr *ngFor="let b of bookings">
+    <td>{{ b.awb }}</td>
+    <td>{{ b.origin }}</td>
+    <td>{{ b.destination }}</td>
+    <td>{{ b.weight }}</td>
+  </tr>
+</table>
+
